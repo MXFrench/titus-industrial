@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titus Industrial</title>
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+</head>
+<body class="w-full selection:bg-accent/50 selection:text-white">
+
+  <!-- Top page header -->
+  <header id="header" class="bg-white py-8 sticky top-0 z-20 px-6">
+    <section class="section flex items-center justify-between max-lg:items-start">
+      <a href="#">
+        <img id="headerImg" class="h-16 transition-all" src="assets/header-logo.png" alt="header-logo">
+      </a>
+
+      <nav id="navbar">
+        <ul id="navbarCollapse" class="flex gap-6 text-xl font-semibold text-slate-600 max-lg:flex-col max-lg:items-end overflow-hidden transition-all">
+          <button id="navToggle" class="lg:hidden cursor-pointer">
+            <span class="text-2xl text-primary-700 hover:text-primary-600"><i class="fa-solid fa-bars"></i></span>
+          </button>
+
+          <li class="transition border-b-2 border-accent/0 hover:border-accent"><a class="transition hover:text-primary-500" href="#">About</a></li>
+          <li class="transition border-b-2 border-accent/0 hover:border-accent"><a class="transition hover:text-primary-500" href="#">Inventory</a></li>
+          <li class="transition border-b-2 border-accent/0 hover:border-accent"><a class="transition hover:text-primary-500" href="#">Collections</a></li>
+          <li class="transition border-b-2 border-accent/0 hover:border-accent"><a class="transition hover:text-primary-500" href="#">Contact</a></li>
+          <li class="transition border-b-2 border-accent/0 hover:border-accent"><a class="transition hover:text-primary-500" href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <!-- Hero section -->
+  <section class="py-20 xl:py-30 px-6">
+    <section class="section flex gap-4 items-center max-md:flex-col max-md:gap-20">
+
+      <div class="flex flex-col gap-7 justify-center">
+        <h1 class="text-6xl max-lg:text-5xl uppercase font-bold text-primary-900">Lorem Ipsum</h1>
+        <p class="text-3xl max-lg:text-2xl text-slate-700 font-medium tracking-wider">Lorem ipsum odor amet, consectetuer adipiscing elit. Eros augue tristique; senectus mauris viverra mi velit.</p>
+        <div class="flex gap-4">
+          <button class="btn btn-primary">Click Here</button>
+          <button class="btn btn-outline">Or Here</button>
+        </div>
+      </div>
+
+      <img class="w-[50%] max-lg:w-[40%] max-md:w-[80%] max-sm:w-full" src="assets/genie-lift-wbg.png" alt="genei-lift">
+    </section>
+  </section>
+
+  <!-- Features section -->
+  <section class="bg-half relative z-10 px-6">
+    <section class="section p-8 max-xl:p-6 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 bg-white shadow-2xl">
+
+      <div class="p-10 max-xl:py-6 max-md:py-12 max-md:px-4 max-md:max-w-75 max-md:mx-auto max-md:border-b-1 border-primary-100 border-r-1 max-lg:col-span-full max-lg:border-r-0">
+        <div class="flex flex-col gap-1 items-center">
+          <span class="text-slate-400 text-3xl font-medium">{1}</span>
+          <h3 class="font-bold text-primary-600 text-5xl max-xl:text-4xl">Order</h3>
+          <hr class="border-0 bg-accent h-1 w-16 rounded-full mb-2">
+          <p class="text-3xl max-xl:text-2xl text-center">Browse our inventory and book your equipment</p>
+        </div>
+      </div>
+      
+      <div class="p-10 max-xl:py-6 max-md:py-12 max-md:px-4 max-md:max-w-75 max-md:mx-auto max-md:border-b-1 border-primary-100 border-r-1 max-md:border-r-0">
+        <div class="flex flex-col gap-1 items-center">
+          <span class="text-slate-400 text-3xl font-medium">{2}</span>
+          <h3 class="font-bold text-primary-600 text-5xl max-xl:text-4xl">Pickup</h3>
+          <hr class="border-0 bg-accent h-1 w-16 rounded-full mb-2">
+          <p class="text-3xl max-xl:text-2xl text-center">Contact us to arrange pickup or delivery</p>
+        </div>
+      </div>
+
+      <div class="p-10 max-xl:py-6 max-md:py-12 max-md:px-4 max-md:max-w-75 max-md:mx-auto">
+        <div class="flex flex-col gap-1 items-center">
+          <span class="text-slate-400 text-3xl font-medium">{3}</span>
+          <h3 class="font-bold text-primary-600 text-5xl max-xl:text-4xl">Dropoff</h3>
+          <hr class="border-0 bg-accent h-1 w-16 rounded-full mb-2">
+          <p class="text-3xl max-xl:text-2xl text-center">Contact us to arrange drop off of equipment or a pickup time</p>
+        </div>
+      </div>
+
+    </section>
+  </section>
+
+  <!-- About section -->
+  <section class="bg-primary-100 section-spacing">
+    <section class="section flex items-start gap-8 max-md:flex-col">
+      <img class="w-[50%] max-lg:w-[40%] max-md:hidden" src="assets/airtow-trailer-wbg.png" alt="airtow-trailer">
+
+      <div class="flex flex-col gap-8 items-start">
+        <h2 class="text-5xl max-xl:text-4xl text-primary-600 font-bold">Specializing in equpiment for homeowners and small contractors</h2>
+        <p class="text-2xl max-lg:text-xl tracking-wide">While there are many places to rent equipment, we are focused on providing rental equipment to the market that's often overlooked. We look forward to helping you get the job done by providing reliable highly capable equipment.</p>
+        <button class="btn border-3 border-primary-700 text-primary-700 hover:bg-white/50 hover:border-primary-600">Click here</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- Inventory section -->
+  <section class="section-spacing bg-stone-50">
+    <section class="section flex flex-col gap-16">
+      <div>
+        <h2 class="text-5xl max-lg:text-4xl text-primary-900 font-bold uppercase">Our Inventory</h2>
+        <hr class="w-40 h-1 mt-2 rounded-lg border-0 bg-accent">
+      </div>
+
+      <div class="booqable-product-list" data-limit="4"></div>
+
+      <button class="btn btn-primary self-center">View All</button>
+    </section>
+  </section>
+  
+  <!-- Youtube section -->
+  <section class="section-spacing bg-img" style="--bg-img: linear-gradient(#FFFFFF, #FFFFFF88), url('../assets/bg-trailer.jpg')">
+    <section class="section flex flex-col gap-24 max-md:gap-16 items-center">
+      <div class="flex flex-col gap-2 items-center">
+        <h2 class="text-5xl max-lg:text-4xl text-primary-900 font-bold uppercase text-center">Some Example Here</h2>
+        <hr class="w-40 h-1 mt-2 rounded-lg border-0 bg-accent">
+      </div>
+      <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/hFbqmqcHG3k" title="Titus Industrial Boom Lift" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a class="btn btn-primary" target="_blank" href="https://www.youtube.com/@TitusIndustrial">See More Videos</a>
+    </section>
+  </section>
+
+  <!-- Footer/contact -->
+  <footer class="bg-primary-900 section-spacing flex flex-col gap-20 max-sm:gap-10">
+    <section class="section flex justify-between max-sm:flex-col max-sm:gap-10">
+      <div class="flex flex-col gap-4">
+        <h2 class="text-5xl max-lg:text-4xl text-white font-bold capitalize">Got questions?</h2>
+        <h3 class="text-4xl max-lg:text-3xl text-accent font-thin capitalize">Don't hesitate to reach out</h3>
+        <p class="text-base text-white">Call: 480-694-3615</p>
+        <p class="text-base text-white">Email: ttusindustrialllc@gmail.com</p>
+      </div>
+
+      <div class="flex gap-4 text-white justify-self-end">
+        <a target="_blank" class="w-10 h-10 rounded-full bg-primary-500 hover:bg-primary-400 cursor-pointer transition flex items-center justify-center" href="https://www.facebook.com/profile.php?id=61574119829466">
+          <svg class="h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+          </svg>
+        </a>
+        <a target="_blank" class="w-10 h-10 rounded-full bg-primary-500 hover:bg-primary-400 cursor-pointer transition flex items-center justify-center" href="https://www.youtube.com/@TitusIndustrialLLC">
+          <svg class="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="section">
+        <p class="text-center text-sm text-primary-300">&copy; 2025 Titus Industrial LLC. All right reserved. | Powered by Booqable</p>
+    </section>
+  </footer>
+
+  <script>
+    var booqableOptions = {
+      company: '5e7ca6a4-e6ca-40e2-a856-9e0b702af35f'
+    };
+  </script>
+  <script src="https://5e7ca6a4-e6ca-40e2-a856-9e0b702af35f.assets.booqable.com/v2/booqable.js"></script>
+
+  <script>
+    // Shrink navbar on scroll
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("headerImg").style.height = "2rem";
+        document.getElementById("header").classList.add("shadow-md");
+      } else {
+        document.getElementById("headerImg").style.height = "3.5rem";
+        document.getElementById("header").classList.remove("shadow-md");
+      }
+    }
+
+    // Navbar toggle functionality
+    const navbarCollapse = document.getElementById("navbarCollapse");
+    let navSize = navbarCollapse.offsetHeight;
+    const closedNavSize = 30;
+
+    function openMenu() {
+      navbarCollapse.style.height = `${navSize}px`;
+    }
+
+    function closeMenu() {
+      navbarCollapse.style.height = `${closedNavSize}px`;
+    }
+
+    function toggleMenu() {
+      if (navbarCollapse.offsetHeight > closedNavSize) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    }
+
+    document.getElementById("navToggle").addEventListener("click", toggleMenu);
+
+    // Fix navbar functionality during screen resizing
+    let navHeightIsSet = false;
+    const navBreakpoint = 1024;
+
+    function setMenuToggle() {
+      navSize = navbarCollapse.offsetHeight;
+      closeMenu();
+      navHeightIsSet = true;
+    }
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < navBreakpoint) {
+        if (!navHeightIsSet) {
+          setMenuToggle();
+        }
+      } else if (navbarCollapse.offsetHeight > closedNavSize) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener("load", () => {
+      if (window.innerWidth < navBreakpoint) {
+        setMenuToggle();
+      }
+    });
+
+  </script>
+</body>
+</html>

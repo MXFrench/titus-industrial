@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-900: #00082C;
+  --color-primary-700: #041250;
+  --color-primary-600: #1E2F79;
+  --color-primary-500: #304BE2;
+  --color-primary-400: #627BFF;
+  --color-primary-300: #99A9FF;
+  --color-primary-200: #B7C4FF;
+  --color-primary-100: #E5E9FF;
+  --color-accent: #F9CD00;
+
+  --font-sans: "Rajdhani", sans-serif;
+}
+
+.btn {
+  @apply py-2 px-4 capitalize font-bold text-lg tracking-wider cursor-pointer transition;
+}
+
+.btn-primary {
+  @apply bg-primary-600 text-white hover:bg-primary-500;
+}
+
+.btn-outline {
+  @apply border-3 border-primary-600 text-primary-600 hover:bg-primary-100 hover:border-primary-500;
+}
+
+.section {
+  width: min(75rem, 100%);
+  margin: 0 auto;
+}
+
+.section-spacing {
+  @apply py-38 max-lg:py-32 max-md:py-28 max-sm:py-16 px-6;
+}
+
+.bg-half {
+  background-image: linear-gradient(to bottom, white 50%, var(--color-primary-100) 50%, var(--color-primary-100));
+}
+
+.bg-img {
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+/* CUSTOMIZE BOOQABLE COMPONENTS */
+
+.booqable-product-list .booqable-product-list-wrapper {
+  @apply grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1;
+}
+
+.booqable-product-list .booqable-product-list-wrapper .booqable-product {
+  @apply p-0 w-full! rounded-none;
+}
+
+.booqable-product-list .booqable-product-list-wrapper .booqable-product .booqable-product-inner {
+  @apply rounded-none p-4;
+}
+
+.booqable-product-list .booqable-product-list-wrapper .booqable-product .booqable-product-inner > span > div {
+  @apply rounded-none;
+}
+
+.booqable-product-list .booqable-product-list-wrapper .booqable-product .booqable-product-inner .bq-details {
+  @apply px-0 py-4 h-auto;
+}
+
+.booqable-product-list .booqable-product-list-wrapper .booqable-product .booqable-product-inner .bq-details .bq-available {
+  @apply m-0 font-sans font-semibold text-sm flex gap-1 tracking-wider font-medium capitalize p-0 bg-white/0! text-primary-400!;
+}
+
+.booqable-product-list .booqable-product-list-wrapper .booqable-product .booqable-product-inner .bq-details .bq-available > span {
+  @apply font-sans text-sm;
+}
+
+.booqable-component .booqable-product-wrapper .booqable-product-inner .bq-product-title-wrapper.bq-has-prices {
+  @apply h-auto! font-sans;
+}
+
+.booqable-component .booqable-product-wrapper .booqable-product-inner .bq-product-title-wrapper.bq-has-prices .bq-product-name {
+  @apply font-sans font-bold text-2xl text-primary-900;
+}
+
+.booqable-component .booqable-product-wrapper .booqable-product-inner .bq-product-title-wrapper.bq-has-prices .bq-price-details {
+  @apply font-sans;
+}
+
+.booqable-component .booqable-product-wrapper .booqable-product-inner .bq-details .bq-button {
+  @apply mt-8 hover:bg-primary-500!;
+}
