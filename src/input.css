@@ -47,6 +47,13 @@
   background-position: 50% 50%;
 }
 
+.input {
+  @apply text-primary-600 text-2xl font-semibold outline-0 placeholder:text-primary-300 py-2 px-3 border-2 border-primary-100 focus:border-primary-500 transition;
+}
+
+.social-link {
+  @apply w-10 h-10 rounded-full bg-primary-500 hover:bg-primary-400 cursor-pointer transition flex items-center justify-center;
+}
 
 /* CUSTOMIZE BOOQABLE COMPONENTS */
 
@@ -92,4 +99,10 @@
 
 .booqable-component .booqable-product-wrapper .booqable-product-inner .bq-details .bq-button {
   @apply mt-8 hover:bg-primary-500!;
+}
+
+/* Customize booqable product cards */
+
+.booqable-product {
+  @apply w-full!;
 }
