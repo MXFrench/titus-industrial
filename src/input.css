@@ -17,7 +17,7 @@
 }
 
 .btn {
-  @apply py-2 px-4 capitalize font-bold text-lg tracking-wider cursor-pointer transition;
+  @apply py-2 px-4 capitalize font-bold text-lg tracking-wider cursor-pointer transition leading-none flex items-center justify-center;
 }
 
 .btn-primary {
