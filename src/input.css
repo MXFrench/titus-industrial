@@ -52,7 +52,7 @@
 }
 
 .social-link {
-  @apply w-10 h-10 rounded-full bg-primary-500 hover:bg-primary-400 cursor-pointer transition flex items-center justify-center;
+  @apply w-10 h-10 rounded-full bg-accent/80 hover:bg-accent/100 text-primary-400 cursor-pointer transition flex items-center justify-center;
 }
 
 /* CUSTOMIZE BOOQABLE COMPONENTS */
